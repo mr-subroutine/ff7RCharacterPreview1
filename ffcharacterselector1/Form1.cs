@@ -21,13 +21,14 @@ namespace ffcharacterselector1
         {
             public string name;
             public string description;
-            public string image;
         }
 
         Character[] myCharacter = new Character[5];
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+            // Place data in structure array
             myCharacter[0].name = "Cloud";
             myCharacter[0].description = "An ex-SOLDIER: first class, Cloud came to Midgar to start a new chapter of his life as a mercenary. " +
                 "At the invitation of his childhood friend, Tifa, he accepted a job with Avalanche. He may bring his buster " +
@@ -55,6 +56,46 @@ namespace ffcharacterselector1
             myCharacter[4].name = "Red XIII";
             myCharacter[4].description = "Red XIII is a beast with a flaming tail, crimson fur, deadly claws, and the ability to speak. " +
                 "At present, he is being held in capitivity as a test subject for Professor Hojo.";
+
+            // Setting default value
+            textBox1.Text = myCharacter[0].description;
+            label1.Text = myCharacter[0].name;
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            switch (trackBar1.Value)
+            {
+                case 0:
+                    pictureBox1.Image = ffcharacterselector1.Resource1.character1;
+                    textBox1.Text = myCharacter[0].description;
+                    label1.Text = myCharacter[0].name;
+                    break;
+
+                case 1:
+                    pictureBox1.Image = ffcharacterselector1.Resource1.character2;
+                    textBox1.Text = myCharacter[1].description;
+                    label1.Text = myCharacter[1].name;
+                    break;
+
+                case 2:
+                    pictureBox1.Image = ffcharacterselector1.Resource1.character3;
+                    textBox1.Text = myCharacter[2].description;
+                    label1.Text = myCharacter[2].name;
+                    break;
+
+                case 3:
+                    pictureBox1.Image = ffcharacterselector1.Resource1.character4;
+                    textBox1.Text = myCharacter[3].description;
+                    label1.Text = myCharacter[3].name;
+                    break;
+
+                case 4:
+                    pictureBox1.Image = ffcharacterselector1.Resource1.character5;
+                    textBox1.Text = myCharacter[4].description;
+                    label1.Text = myCharacter[4].name;
+                    break;
+            }
         }
     }
 }
