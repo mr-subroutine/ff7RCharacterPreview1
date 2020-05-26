@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Speech.Synthesis;
 
 namespace ffcharacterselector1
 {
@@ -24,6 +25,7 @@ namespace ffcharacterselector1
         }
 
         Character[] myCharacter = new Character[5];
+        SpeechSynthesizer synth = new SpeechSynthesizer();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -96,6 +98,14 @@ namespace ffcharacterselector1
                     label1.Text = myCharacter[4].name;
                     break;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int selection = 0;
+            synth.SetOutputToDefaultAudioDevice();
+            selection = trackBar1.Value;
+            synth.Speak(myCharacter[selection].description);
         }
     }
 }

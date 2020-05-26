@@ -8,3 +8,4 @@ C:\Users\gamef\source\repos\ffcharacterselector1\ffcharacterselector1\obj\Debug\
 C:\Users\gamef\source\repos\ffcharacterselector1\ffcharacterselector1\obj\Debug\ffcharacterselector1.csproj.CoreCompileInputs.cache
 C:\Users\gamef\source\repos\ffcharacterselector1\ffcharacterselector1\obj\Debug\ffcharacterselector1.exe
 C:\Users\gamef\source\repos\ffcharacterselector1\ffcharacterselector1\obj\Debug\ffcharacterselector1.pdb
+C:\Users\gamef\source\repos\ffcharacterselector1\ffcharacterselector1\obj\Debug\ffcharacterselector1.csprojAssemblyReference.cache
